@@ -1,0 +1,6 @@
+application/cache/[^.]*
+application/logs/[^.]*
+application/config/[^.]*
+.htaccess
+*.psd
+*.sass
