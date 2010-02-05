@@ -109,7 +109,7 @@ Route::set('contact', 'contact')
 		'action'     => 'index'
 	));
 
-Route::set('signup', 'signup')
+Route::set('email_signup', 'email_signup')
 	->defaults(array(
 		'controller' => 'emails',
 		'action'     => 'new'

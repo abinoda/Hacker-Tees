@@ -1,6 +1,6 @@
 <div id="email-signup">
     <h3>Get notified when we release a new shirt design:</h3>
-    <?= Form::open(URL::site('signup'), array('id' => 'capture-email')) ?>
+    <?= Form::open(URL::site('email_signup')) ?>
         <?= CSRF::set_token() ?>
         <div>
             <?= Form::input('email', 'enter your email', array('id' => 'email')) ?>

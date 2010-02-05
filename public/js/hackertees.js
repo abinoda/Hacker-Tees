@@ -1,5 +1,5 @@
 $(function() {
-    $("#capture-email").submit(function(e) {
+    $("#email-signup form").submit(function(e) {
 		e.preventDefault();
 		
 		if (valid_email($("#email").val()))
