@@ -11,7 +11,7 @@
 </div>
 <div id="sidebar">    
     <div id="shirt-description">        
-        <? if ($tee->is_limited): ?>
+        <? if ($tee->is_limited AND count($products)): ?>
         <span id="limited-edition">Limited Edition</span>
         <div id="quantity"><?= $quantity ?></div>
         <? endif ?>

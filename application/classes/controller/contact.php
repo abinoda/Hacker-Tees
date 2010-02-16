@@ -3,9 +3,9 @@
 class Controller_Contact extends Controller_Application {
     
     public function action_index()
-    {                
+    {   
+        $title = 'Contact';
         $this->template->section = 'contact';
-        $this->template->title[] = 'Contact';
         $this->template->content = View::factory('contact/index')
                                          ->bind('form', $form)
                                          ->bind('errors', $errors);
@@ -19,6 +19,7 @@ class Controller_Contact extends Controller_Application {
                               ->rule('email', 'email')
                               ->rule('subject', 'not_empty')
                               ->rule('message', 'not_empty');
+                              
             if ($form->check())
             {
                 // create email
@@ -37,14 +38,15 @@ class Controller_Contact extends Controller_Application {
                               ->send($message);
                 
                 
-                
-                $this->template->content = View::factory('contact/thanks');
+                $title = 'Thank you for contacting us!';
+                $this->template->content = View::factory('contact/thank_you');
             }
             else
             {
                 $errors = $form->errors('contact');
             }
         }
-                
+        
+        $this->template->title[] = $title;        
     }    
 }

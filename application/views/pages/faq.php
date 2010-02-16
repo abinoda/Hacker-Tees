@@ -15,7 +15,7 @@
         </li>
         <li>
             <p class="q">Q: How are your shirts printed?</p>
-            <p>A: Our shirts are screen-printed on Gildan shirts by <a href="http://woodencotton.net/" title="Wooden Cotton Printing">Wooden Cotton Printing</a>.</p>
+            <p>A: Our shirts are screen-printed on 100% combed ring-spun cotton 30/1's fine knit jersey by <a href="http://woodencotton.net/" title="Wooden Cotton Printing">Wooden Cotton Printing</a>.</p>
         </li>
         <li>
             <p class="q">Q: What if I have an idea for a shirt?</p>
