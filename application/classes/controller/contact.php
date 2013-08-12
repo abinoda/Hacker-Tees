@@ -26,7 +26,7 @@ class Controller_Contact extends Controller_Application {
                 $message = Swift_Message::newInstance()
                                           ->setSubject('Hacker Tees - '.$form['subject'])
                                           ->setFrom(array($form['email'] => $form['name']))
-                                          ->setTo(array('abi@hackertees.com', 'cory@hackertees.com'))
+                                          ->setTo(array('abrahamnoda+hackertees@gmail.com'))
                                           ->setBody($form['message']);
 
                 $transport = Swift_SmtpTransport::newInstance(Kohana::config('swift')->get('host'))
